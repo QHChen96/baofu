@@ -1,3 +1,7 @@
+import {
+  resolve
+} from 'path';
+
 const config = {
   projectName: "baofu",
   date: "2021-10-27",
@@ -54,9 +58,15 @@ const config = {
       },
     },
   },
+  alias: {
+    '@/utils': resolve(__dirname, '..', 'src/utils'),
+    '@/components': resolve(__dirname, '..', 'src/components'),
+    '@/assets': resolve(__dirname, '..', 'src/assets'),
+    '@/hooks': resolve(__dirname, '..', 'src/hooks'),
+  }
 };
 
-module.exports = function (merge) {
+export default function (merge) {
   if (process.env.NODE_ENV === "development") {
     return merge({}, config, require("./dev"));
   }
