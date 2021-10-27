@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "baofu",
+  "description": "暴富",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
