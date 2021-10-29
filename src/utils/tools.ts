@@ -1,5 +1,5 @@
 import { isPlainObject } from 'lodash'
-import getSystemInfo from './getSystemInfo'
+import getSystemInfo from './system-info'
 
 export const formatMoney = (moneyUnFormat: string | number) => {
   const numMoney = +moneyUnFormat / 100

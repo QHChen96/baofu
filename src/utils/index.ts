@@ -1,5 +1,6 @@
 export * from './tools'
-export { default as getSystemInfo } from './getSystemInfo'
+export { default as getSystemInfo } from './system-info'
+export { navigateTo, navigateBack } from './navigate'
 
 export const compareVersion = (value: string, target: string) => {
   let e = value.split('.'),
